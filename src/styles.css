@@ -16,14 +16,18 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   transition: color 150ms var(--timing-function),
     background-color 150ms var(--timing-function);
-  background-color: var(--blue);
-}
-
-body {
+  background-color: white;
   color: black;
 }
 
+.classHeader {
+  background-color: beige;
+}
+
 h1 {
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -38,7 +42,6 @@ input {
   /* padding-top: 20px; */
   /* padding-left: 50%; */
   width: 100%;
-  background-color: blanchedalmond;
 }
 
 img {
