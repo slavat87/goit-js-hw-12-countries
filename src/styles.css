@@ -35,10 +35,17 @@ input {
 
 .countries {
   display: inline-flex;
+
+  padding: 40;
 }
 
 img {
   align-items: flex-end;
   width: 128px;
   height: 128px;
+}
+
+li {
+  margin: 15px;
+  list-style-type: none;
 }
