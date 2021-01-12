@@ -36,13 +36,13 @@ export default function fetchCountries(searchQuery) {
           title: 'Попередження',
           text: 'Знайдено забагато збігів. Введіть більш конкретний запит!',
           delay: 3000,
-          // 'throw new Error('Error fetching data')'
         });
-      } else if (countriesList.length >= 2 && countriesList.length <= 10) {
+        // throw new Error('Error fetching data');
+      } else if (countriesList.length > 1 && countriesList.length <= 10) {
         createItem(listTemplate, countriesList, countries);
-      } else if (countriesList.length === 1) {
-        createItem();
-        countries.innerHTML = '';
+        // } else if (countriesList.length === 0) {
+        //   createItem();
+        //   countries.innerHTML = '';
       } else {
         createItem(template, countriesList, countries);
       }

@@ -1,6 +1,6 @@
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --dark-blue: rgb(2, 84, 161);
+  --blue: rgb(111, 158, 201);
   --light: rgb(245, 245, 245);
 }
 
@@ -16,7 +16,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   transition: color 150ms var(--timing-function),
     background-color 150ms var(--timing-function);
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
 }
 
 body {
@@ -34,9 +34,11 @@ input {
 }
 
 .countries {
-  display: inline-flex;
-
-  padding: 40;
+  /* display: inline-flex; */
+  /* padding-top: 20px; */
+  /* padding-left: 50%; */
+  width: 100%;
+  background-color: blanchedalmond;
 }
 
 img {
@@ -48,4 +50,13 @@ img {
 li {
   margin: 15px;
   list-style-type: none;
+  /* background-color: rgb(180, 161, 53); */
+}
+
+.info {
+  display: inline;
+}
+
+.flag {
+  float: left;
 }
